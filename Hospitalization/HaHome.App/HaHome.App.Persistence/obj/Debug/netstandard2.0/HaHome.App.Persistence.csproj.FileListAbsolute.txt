@@ -1,9 +1,0 @@
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\bin\Debug\netstandard2.0\HaHome.App.Persistence.deps.json
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\bin\Debug\netstandard2.0\HaHome.App.Persistence.dll
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\bin\Debug\netstandard2.0\HaHome.App.Persistence.pdb
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\obj\Debug\netstandard2.0\HaHome.App.Persistence.csprojAssemblyReference.cache
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\obj\Debug\netstandard2.0\HaHome.App.Persistence.AssemblyInfoInputs.cache
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\obj\Debug\netstandard2.0\HaHome.App.Persistence.AssemblyInfo.cs
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\obj\Debug\netstandard2.0\HaHome.App.Persistence.csproj.CoreCompileInputs.cache
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\obj\Debug\netstandard2.0\HaHome.App.Persistence.dll
-C:\Users\JuanJ\Documents\DotNetProjects\Hospitalization\HaHome.App\HaHome.App.Persistence\obj\Debug\netstandard2.0\HaHome.App.Persistence.pdb

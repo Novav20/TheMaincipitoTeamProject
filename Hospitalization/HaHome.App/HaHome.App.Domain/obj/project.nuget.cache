@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/IJ204BWyKXPxcaCDcqPAHq52HhW3o0egJ2KlFYJ5P519KZP60mWKH9xQg/X2QoN4d7HA7Nfg1TtMRySBmzjlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JuanJ\\Documents\\DotnetProjects.JD\\Hospitalization\\HaHome.App\\HaHome.App.Domain\\HaHome.App.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JuanJ\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\JuanJ\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

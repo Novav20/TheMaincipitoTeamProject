@@ -3,55 +3,58 @@
 @{
     ViewData["Title"] = "Paciente";
 }
-<div class="contenedor">
-
-        
+<form method="post">
+<div class="contenedor">   
         <header class="head">
             <div>
                 <p>Informacion Paciente</p>
                 <li>
-                    <input type="number" id="ID_Paciente" autofocus placeholder="ID">
+                    <input asp-for="Paciente.Id" type="number" id="ID_Paciente" autofocus placeholder="ID">
                 </li>
                 <li>
-                    <input type="text" id="NombrePaciente" autofocus placeholder="Nombre">
+                    <input asp-for="Paciente.Nombre" type="text" id="NombrePaciente" autofocus placeholder="Nombre">
                 </li>
                 <li>
-                    <input type="text" id="ApellidoPaciente" autofocus placeholder="Apellidos">
+                    <input asp-for="Paciente.Apellidos" type="text" id="ApellidoPaciente" autofocus placeholder="Apellidos">
                 </li>
                 <li>
                     <label for="start">Genero:
                     </label>
-                    <select class="form-select"  id="selectGenere" name="generoPaciente">
-                        <option value="1">Femenino</option>
-                        <option value="2">Masculino</option>
-                        <option value="3">No especifico</option>
+                    <select asp-for="Paciente.Genero" class="form-select"  id="selectGenere" name="generoPaciente">
+                        <option value="0">Femenino</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">No especifico</option>
                     </select>
                 </li>
                 <li>
-                    <label for="start">Fecha de Nacimiento:
-                    </label>
-                    <input type="date" id="fechaNacimiento" name="Fecha_Nacimiento" value="2022-07-09" min="1900-01-01"
+                    
+                    <label for="start">Fecha de Nacimiento:</label>
+                    <!--
+                    <input asp-for="Paciente.FechaNacimiento"type="date" id="fechaNacimiento" name="Fecha_Nacimiento" value="2022-07-09" min="1900-01-01"
                         max="2022-12-31">
+                        -->
+                     <input asp-for="Paciente.FechaNacimiento" type="text" id="fechaNacimiento" autofocus placeholder="Dia/Mes/Año">   
                 </li>
                 <li>
-                    <input type="number" id="telefonoPaciente" autofocus placeholder="Telefono">
+                    <input asp-for="Paciente.Telefono" type="number" id="telefonoPaciente" autofocus placeholder="Telefono">
                 </li>
                 <li>
-                    <input type="text" id="direccionPaciente" autofocus placeholder="Direccion">
+                    <input asp-for="Paciente.Direccion" type="text" id="direccionPaciente" autofocus placeholder="Direccion">
                 </li>
                 <li>
-                    <input type="text" id="ciudadPaciente" autofocus placeholder="Ciudad">
+                    <input asp-for="Paciente.Ciudad" type="text" id="ciudadPaciente" autofocus placeholder="Ciudad">
                 </li>
                 <li>
-                    <input type="text" id="latitudPaciente" autofocus placeholder="Latitud">
+                    <input asp-for="Paciente.latitud" type="text" id="latitudPaciente" autofocus placeholder="Latitud">
                 </li>
                 <li>
-                    <input type="text" id="longitudPaciente" autofocus placeholder="Longitud">
+                    <input asp-for="Paciente.longitud" type="text" id="longitudPaciente" autofocus placeholder="Longitud">
                 </li>
                 </ul>
-                <button type="button" class="btn btn-outline-dark">Editar Paciente</button>
                 <button type="button" class="btn btn-outline-dark">Eliminar Paciente</button>
+                <button type="submit" class="btn btn-outline-dark">Guardar</button>
             </div>
             
         </header>
     </div>
+</form>

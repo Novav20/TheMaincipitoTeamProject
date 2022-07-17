@@ -11,6 +11,7 @@ namespace MyApp.Namespace
 {
     public class Lista_de_PacientesModel : PageModel
     {
+        //Lista de pacientes
         private readonly IRepositorioPaciente repositorioPaciente;
         public IEnumerable<Paciente> Pacientes {get;set;}
         public Lista_de_PacientesModel(IRepositorioPaciente repositorioPaciente)

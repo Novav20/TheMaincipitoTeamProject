@@ -1,0 +1,56 @@
+﻿@page
+@model MyApp.Namespace.Lista_de_PacientesModel
+@{
+    ViewData["Title"] = "Lista Pacientes";
+}
+<div class="contenedor">
+        <header class="head">
+            <div>
+                <p>Lista de Pacientes</p>
+                <br>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Género</th>
+                            <th scope="col">Fecha de Nacimiento</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Ciudad</th>
+                            <th scope="col">More info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    @{
+        foreach (var paciente in Model.Pacientes)
+        {
+            <tr>
+              <td>@paciente.Id</td>
+              <td>@paciente.Nombre</td>
+              <td>@paciente.Apellidos</td>
+              <td>@paciente.Genero</td>
+              <td>@paciente.FechaNacimiento</td>
+              <td>@paciente.Telefono</td>
+              <td>@paciente.Ciudad</td>
+              <td>
+                <a asp-page="/FormularioPaciente/formularioPaciente" asp-route-pacienteId="@paciente.Id">
+                <i style="margin-right: 5px; color: black;" class="fas fa-info"></i>
+                </a>
+                <a asp-page="/FormularioPaciente/formularioPaciente" asp-route-pacienteId="@paciente.Id">
+                <i style="margin-left: 5px; color: black;" class="fas fa-edit"></i>
+                </a>
+            </td>
+            </tr>
+        }
+      }
+                    
+                    </tbody>
+                </table>
+
+            </div>
+            
+                <button type="submit" class="btn btn-outline-dark"><a style="color:black;" href="/FormularioPaciente/formularioPaciente">Registrar paciente</a></button>
+        </header>
+    </div>
+    

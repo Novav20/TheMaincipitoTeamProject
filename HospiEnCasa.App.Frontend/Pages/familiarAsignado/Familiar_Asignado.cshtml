@@ -1,0 +1,40 @@
+﻿@page
+@model MyApp.Namespace.Familiar_AsignadoModel
+@{
+    ViewData["Title"] = "Familiar Designado";
+}
+<form method="post">
+    <div class="contenedor">
+        <header class="head">
+            <div>
+                <p>Informacion Familiar Designado</p>
+                <li>
+                    <input asp-for="FamiliarDesignado.Nombre" type="text" id="NombreFamiliarDesignado" autofocus
+                        placeholder="Nombre">
+                </li>
+                <li>
+                    <input asp-for="FamiliarDesignado.Apellidos" type="text" id="ApellidoFamiliarDesignado" autofocus
+                        placeholder="Apellidos">
+                </li>
+                <li>
+                    <label for="start">Genero:
+                    </label>
+                    <select asp-for="FamiliarDesignado.Genero" class="input-text">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                </li>
+                <li>
+                    <input asp-for="FamiliarDesignado.Parentesco" type="text" id="PacienteAsignado" autofocus
+                        placeholder="Parentesco">
+                </li>
+                <li>
+                    <input asp-for="FamiliarDesignado.Correo" type="text" id="CorreoPacienteAsignado" autofocus
+                        placeholder="Correo">
+                </li>
+                </ul>
+                <button type="submit" class="btn btn-outline-dark">Registrar Familiar</button>
+            </div>
+        </header>
+    </div>
+</form>

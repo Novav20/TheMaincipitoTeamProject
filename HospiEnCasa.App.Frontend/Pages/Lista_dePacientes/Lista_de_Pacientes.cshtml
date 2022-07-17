@@ -1,0 +1,92 @@
+﻿@page
+@model MyApp.Namespace.Lista_de_PacientesModel
+@{
+    ViewData["Title"] = "Lista Pacientes";
+}
+<div class="contenedor">
+        <header class="head">
+            <div>
+                <p>Lista de Pacientes</p>
+                <br>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Género</th>
+                            <th scope="col">Fecha de Nacimiento</th>
+                            <th scope="col">Teléfono</th>
+                            <th scope="col">Ciudad</th>
+                            <th scope="col">More info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    @{
+        foreach (var paciente in Model.Pacientes)
+        {
+            <tr>
+              <td>@paciente.Id</td>
+              <td>@paciente.Nombre</td>
+              <td>@paciente.Apellidos</td>
+              <td>@paciente.Genero</td>
+              <td>@paciente.FechaNacimiento</td>
+              <td>@paciente.Telefono</td>
+              <td>@paciente.Ciudad</td>
+              <td>
+                <a asp-page="./formularioPaciente" asp-route-pacienteId="@paciente.Id">
+                    Detalles Paciente
+                </a>
+            </td>
+            </tr>
+        }
+      }
+                    
+                    </tbody>
+                </table>
+
+            </div>
+            <div>
+                <p>Registrar Paciente</p>
+                <li>
+                    <input type="text" id="NombrePaciente" autofocus placeholder="Nombre">
+                </li>
+                <li>
+                    <input type="text" id="ApellidoPaciente" autofocus placeholder="Apellidos">
+                </li>
+                <li>
+                    <label for="start">Genero:
+                    </label>
+                    <select class="form-select"  id="selectGenere" name="generoPaciente">
+                        <option value="1">Femenino</option>
+                        <option value="2">Masculino</option>
+                        <option value="3">No especifico</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="start">Fecha de Nacimiento:
+                    </label>
+                    <input type="date" id="fechaNacimiento" name="Fecha_Nacimiento" value="2022-07-09" min="1900-01-01"
+                        max="2022-12-31">
+                </li>
+                <li>
+                    <input type="number" id="telefonoPaciente" autofocus placeholder="Telefono">
+                </li>
+                <li>
+                    <input type="text" id="direccionPaciente" autofocus placeholder="Dirección">
+                </li>
+                <li>
+                    <input type="text" id="ciudadPaciente" autofocus placeholder="Ciudad">
+                </li>
+                <li>
+                    <input type="text" id="latitudPaciente" autofocus placeholder="Latitud">
+                </li>
+                <li>
+                    <input type="text" id="longitudPaciente" autofocus placeholder="Longitud">
+                </li>
+                </ul>
+                <button type="button" class="btn btn-outline-dark">Registrar Paciente</button>
+                <button type="button" class="btn btn-outline-dark">Buscar Paciente</button>
+            </div>
+        </header>
+    </div>

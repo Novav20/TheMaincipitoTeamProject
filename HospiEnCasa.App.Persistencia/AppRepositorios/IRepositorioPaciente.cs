@@ -14,5 +14,6 @@ namespace HospiEnCasa.App.Persistencia
         Enfermera AsignarEnfermera(int idPaciente, int idEnfermera);
         FamiliarDesignado AsignarFamiliarDesignado(int idPaciente, int idFamiliarDesignado);
         Historia AsignarHistoria(int idPaciente, int idHistoria);
+        List<SignoVital> AdicionarSignosVitales(Paciente paciente, SignoVital signoVital);
     }
 }

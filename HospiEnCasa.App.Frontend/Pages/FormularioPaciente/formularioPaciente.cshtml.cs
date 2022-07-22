@@ -50,7 +50,7 @@ namespace HospiEnCasa.App.Frontend
             {
                 repositorioPaciente.AddPaciente(Paciente);
             }
-            return Page();
+            return RedirectToPage("/Lista_dePacientes/Lista_de_Pacientes");
         }
     }
 }

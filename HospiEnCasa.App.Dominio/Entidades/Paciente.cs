@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HospiEnCasa.App.Dominio
 {
@@ -14,6 +15,8 @@ namespace HospiEnCasa.App.Dominio
         public float latitud{get;set;}
         public float longitud{get;set;}
         public string Ciudad{get;set;}
+        
+        [DataType(DataType.Date)]
         public DateTime FechaNacimiento{get;set;}
 
     }

@@ -1,0 +1,51 @@
+﻿@page
+@model MyApp.Namespace.AsignarMedicoModel
+@{
+    ViewData["Title"] = "";
+}
+<form method="post">
+    <div class="contenedor">
+        <header class="head">
+            <div>
+                <p>Asignar Medico</p>
+                <ul>
+                    <input asp-for="Paciente.Id" type="number" id="ID_Paciente" autofocus placeholder="Id Paciente">
+                    <input asp-for="Paciente.Nombre" type="text" id="NombrePaciente" autofocus placeholder="Nombre Paciente">
+                    <input asp-for="Paciente.Apellidos" type="text" id="ApellidoPaciente" autofocus placeholder="Apellido Paciente">
+                </ul>
+            </div>
+
+            <div>
+                <p>Lista Medicos</p>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Especialidad</th>
+                            <th scope="col">Asignar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jorge</td>
+                            <td>Londoño</td>
+                            <td>Optometra</td>
+                            <td>
+                                <button>Asignar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Navarro</td>
+                            <td>Cardiologo</td>
+                            <td>
+                                <button>Asignar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </header>
+    </div>
+</form>

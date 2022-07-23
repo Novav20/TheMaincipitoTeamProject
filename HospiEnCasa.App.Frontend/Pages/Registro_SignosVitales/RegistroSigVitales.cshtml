@@ -1,0 +1,50 @@
+﻿@page
+@model MyApp.Namespace.RegistroSigVitalesModel
+@{
+}
+<form method="post">
+    <div class="contenedor">
+        <header class="head">
+            <div>
+                <p>Registro signos vitales</p>
+                <ul>
+                    <p>Paciente:</p>
+                    <input type="text" autofocus placeholder="Id Paciente">
+                    <input type="text" autofocus placeholder="Nombre Paciente">
+                    <input type="text" autofocus placeholder="Apellido Paciente">
+                </ul>
+            </div>
+            <div>
+                <p>Lista Familiares</p>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Parentesco</th>
+                            <th scope="col">Asignar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mario</td>
+                            <td>Navarro</td>
+                            <td>Hijo</td>
+                            <td>
+                                <button>Asignar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Ramirez</td>
+                            <td>Hermano</td>
+                            <td>
+                                <button>Asignar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </header>
+    </div>
+</form>
